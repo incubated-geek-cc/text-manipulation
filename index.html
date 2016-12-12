@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <title>Text Manipuation</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="js/main.js"></script>
+    </head>
+    <body spellcheck="false">
+        <div id="control_menu">            
+            <input type="button" class="menu" value="Load File"/><input type="file" id="file" onChange="setTimeout('loadfile(\'file\',\'input_output\')', 100);" style="height:41px; width:112px; margin:0px 0px 0px -112px;"/>
+            <input type="button" class="menu" value="Save As" onClick="savefile('no', 'saveas', 'input_output');"/>
+            <input type="text" id="saveas" value="output.txt" style="width:100%; margin:0px 0px 0px 0px;"/>
+            <div style="padding:3px 0px 3px 0px;">
+                <input type="radio" name="sfrmt" id="unix" checked />Unix
+                <input type="radio" name="sfrmt" id="dos"/>Dos
+            </div>
+            <div style="white-space:nowrap; padding:0px 0px 7px 0px;">
+                <input type="button" title="Select input/output box." value="Sel" onclick="select_all_text('input_output');" style="width:47%;"/>
+                <input type="button" title="Clear input/output box." value="Clr" onclick="clear_all_text('input_output', 'Clear input/output box?');" style="width:47%;"/>
+            </div>
+            <input type="button" class="menu" value="Undo Last" onclick="undo_last();" style="margin:0px 0px 0px 0px;"/>
+            <div style="padding:4px 0px 6px 0px; white-space:nowrap;">
+                Wrap<input type="radio" name="radbtn" onClick="wrdwrpis('on');"/>on<input type="radio" name="radbtn" onClick="wrdwrpis('off');" CHECKED />off
+            </div>
+        </div>
+        <div id="function_menu">
+            <div class="function_menu_cats">Basic Tools</div>
+            <input type="button" class="menu" value="Count Characters Words Sentences Lines" onclick="open_function('ccwsl');"/>
+            <input type="button" class="menu" value="Find and Replace" onclick="open_function('far');"/>
+            <input type="button" class="menu" value="Letter Case Converter" onclick="open_function('lcc');"/>
+            <input type="button" class="menu" value="Remove Letter Accents" onclick="open_function('rla');"/>
+            <input type="button" class="menu" value="Remove Unwanted Spaces" onclick="open_function('rus');"/>
+            <div class="function_menu_cats">Line Tools</div>
+            <input type="button" class="menu" value="Add Prefix and/or Suffix into Each Line" onclick="open_function('apaosiel');"/>
+            <input type="button" class="menu" value="Add or Remove Line Breaks" onclick="open_function('arlb');"/>
+            <input type="button" class="menu" value="Join Lines" onclick="open_function('jlbl');"/>
+            <input type="button" class="menu" value="Remove Duplicate Lines" onclick="open_function('rdl');"/>
+            <input type="button" class="menu" value="Remove Empty Lines" onclick="open_function('rel');"/>
+            <input type="button" class="menu" value="Remove Lines Containing" onclick="open_function('rlc');"/>
+            <input type="button" class="menu" value="Sort Lines" onclick="open_function('stl');"/>
+            <div class="function_menu_cats">Numeration</div>
+            <input type="button" class="menu" value="Generate List of Numbers" onclick="open_function('glon');"/>
+            <input type="button" class="menu" value="Number Each Line" onclick="open_function('nel');"/>
+            <div class="function_menu_cats">Obfuscation</div>
+            <input type="button" class="menu" value="Binary Code" onclick="open_function('bcg');"/>
+            <input type="button" class="menu" value="Disemvowel" onclick="open_function('disvwl');"/>
+            <input type="button" class="menu" value="Encrypt Decrypt" onclick="open_function('edt');"/>
+            <input type="button" class="menu" value="Reverse Flip Upsidedown" onclick="open_function('rfu');"/>
+            <input type="button" class="menu" value="ROT13 Caesar Cipher" onclick="open_function('rot');"/>
+            <input type="button" class="menu" value="Scramble Descramble Words" onclick="open_function('sdw');"/>
+            <div class="function_menu_cats">Permutation</div>
+            <input type="button" class="menu" value="Combination Generator" onclick="open_function('combgen');"/>
+            <input type="button" class="menu" value="Permutation Generator" onclick="open_function('permgen');"/>
+            <div class="function_menu_cats">Randomization</div>
+            <input type="button" class="menu" value="Random Number Generator" onclick="open_function('rng');"/>
+            <input type="button" class="menu" value="Random String Generator" onclick="open_function('rsg');"/>
+            <input type="button" class="menu" value="String Randomizer" onclick="open_function('strad');"/>
+            <div class="function_menu_cats">Miscellaneous</div>
+            <input type="button" class="menu" value="Extract Delimited Column" onclick="open_function('edc');"/>
+            <input type="button" class="menu" value="Unicode Converter" onclick="open_function('unicvr');"/>
+        </div>
+        <textarea id="line_counter" wrap="off">1.</textarea>
+        <textarea id="input_output" wrap="off" placeholder="Input/Output Box:" onscroll="scroll_areas();" oninput="line_counter();"></textarea>
+        <div id="function_box">
+            <div class="fb_pad">
+                &#9668; Function controls will display here after clicking a function opening button.<br>
+                <br>                             
+                <br>                                                 
+            </div>
+        </div>
+        <div id="wrdfrq"></div>
+        <script src="js/functions.js"></script>
+    </body>                        
+</html>

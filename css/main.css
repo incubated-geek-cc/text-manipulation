@@ -1,0 +1,218 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #E1E1D2;
+}
+textarea {
+    display: block;
+    margin: 0px;
+    padding: 8px 10px 8px 10px;
+    overflow: scroll;
+    font-family: lucida console, courier new, courier, monospace;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    outline: none;
+    resize: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 12px 4px 4px 4px;
+    box-shadow: inset 0 0 6px #FFFF00;
+}
+input {
+    display: inline-block;
+    height: 33px;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+input[type='text'] {
+    width: auto;
+    margin: 3px 0px 3px 0px;
+    padding: 0px 10px 0px 10px;
+    font-family: arial;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    box-shadow: inset 0 0 6px #FFFF00;
+}
+input[type='button'] {
+    width: auto;
+    margin: 3px 0px 3px 0px;
+    padding: 0px 10px 0px 10px;
+    font-family: arial;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: inset 0 0 6px #0000FF;
+}
+input[type='button']:hover {
+    box-shadow: inset 0 0 6px #00CC00;
+}
+input[type='file'] {
+    width: 92px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px 0px 0px -92px;
+    -moz-opacity: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+input[type='file']::-webkit-file-upload-button {
+    cursor: pointer;
+}
+div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+}
+table,
+td {
+    padding: 0px;
+}
+img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+#countdisplay td {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+}
+input[type='button'].menu {
+    width: 100%;
+    height: auto;
+    white-space: normal;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    line-height: 1.2;
+}
+#control_menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 305px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+#function_menu {
+    position: absolute;
+    top: 305px;
+    left: 0px;
+    width: 150px;
+    height: 200px;
+    overflow-y: scroll;
+    padding: 0px 10px 10px 10px;
+}
+div.function_menu_cats {
+    line-height: 1;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    font-weight: bold;
+    border-top: 2px solid #000000;
+}
+#line_counter {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    width: 80px;
+    height: 50%;
+    padding: 8px 0px 8px 0px;
+    border: 0px;
+    overflow-y: hidden;
+    text-align: right;
+    box-shadow: none;
+    color: #707070;
+    background-color: #D8D8D8;
+    border-radius: 0px;
+}
+#input_output {
+    position: absolute;
+    top: 0px;
+    left: 230px;
+    width: 100%;
+    height: 50%;
+    border: 0px;
+    border-radius: 0px;
+}
+#function_box {
+    position: relative;
+    top: 50%;
+    left: 150px;
+    width: 100%;
+    height: 50%;
+    overflow: auto;
+}
+div.fb_pad {
+    padding: 10px;
+}
+span.nowrap {
+    white-space: nowrap;
+}
+#wrdfrq {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 0%;
+    margin: 0px;
+    overflow: auto;
+    line-height: 1.7;
+    background-color: #E1E1D2;
+    border-right: 1px solid #000000;
+}
+tr.wfctr {
+    background-color: #FFFFFF;
+}
+td.wfctdhl {
+    background-color: #FFFFCC;
+}
+td.wfctd {
+    padding: 5px;
+    border: 1px solid #000000;
+}
