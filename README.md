@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/incubated-geek-cc/text-manipulation/raw/main/img/logo.png" width="96" alt="logo">
+  <img src="https://github.com/incubated-geek-cc/text-manipulation/raw/master/img/logo.png" width="96" alt="logo">
 
   # 📓 Text Manipulation
 
@@ -50,7 +50,7 @@
 </div>
 
 ### 👀 Preview
-<img src='https://github.com/incubated-geek-cc/text-manipulation/raw/main/img/preview.png' width="800px" />
+<img src='https://github.com/incubated-geek-cc/text-manipulation/raw/master/img/preview.png' width="800px" />
 
 <p>— <b>Join me on 📝 <b>Medium</b> at <a href='https://medium.com/@geek-cc' target='_blank'>~ ξ(🎀˶❛◡❛) @geek-cc</a></b></p>
 
